@@ -6,9 +6,10 @@ public class Algo {
 	
 	public SolutionPartielle minimiser(SolutionPartielle deb, Heuristique h, int borneSup){
 		SolutionPartielle meilleure = deb;
-		
+				
 		//file de traitement des solution partielles
 		List<SolutionPartielle> enCours = new LinkedList<>();
+		enCours.add(deb);
 		
 		//tant qu'on a encore des éléments à traiter
 		while(!enCours.isEmpty()){
@@ -36,7 +37,7 @@ public class Algo {
 		
 		
 		
-		return deb;
+		return meilleure;
 	}
 
 }
