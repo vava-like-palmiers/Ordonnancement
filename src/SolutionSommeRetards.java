@@ -21,9 +21,24 @@ public class SolutionSommeRetards implements SolutionPartielle {
 	
 	
 	@Override
-	public int valeur() {
-		// TODO
-		return 0;
+	public int valeur(){
+		
+		//calculer la somme des retards
+		int sum = 0;
+		int currentStart = SolutionSommeRetards.sommeDurees;
+		for(Processus p : procs){
+			final int retard = Math.max(0, (currentStart - p.di)*p.wi);
+			sum += retard;
+			currentStart -= p.pi;
+		}
+		
+		return sum;
+	}
+	
+	
+	@Override
+	public boolean finie(){
+		return procs.size() == enonce.size();
 	}
 
 	@Override
