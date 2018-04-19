@@ -27,6 +27,7 @@ public class SolutionSommeRetards implements SolutionPartielle {
 		}
 	}
 	
+	
 	public SolutionSommeRetards() {
 		procs = new ArrayList<>();
 	}

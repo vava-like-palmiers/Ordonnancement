@@ -6,7 +6,7 @@ import java.util.List;
 public class SolutionMaxRetard implements SolutionPartielle {
 	
 	// énoncé du problème
-	private static List<Processus> enonce;
+	public static List<Processus> enonce;
 	private static int sommeDurees;
 	
 	private List<Processus> m1;

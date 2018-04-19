@@ -33,4 +33,10 @@ public class Processus {
 			return false;
 		return true;
 	}
+	
+	
+	@Override
+	public String toString() {
+		return "[p : " + pi + ", w : " + wi + ", d : " + di + "]";
+	}
 }
